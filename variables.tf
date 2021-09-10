@@ -23,6 +23,12 @@ variable "tags" {
   default = {}
 }
 
+variable "network_default_action" {
+  description = "Default network action to take"
+
+  default = "Deny"
+}
+
 variable "virtual_network_subnet_ids" {
   type        = list(string)
   description = "List of subnets to permit access to the Storage Account"

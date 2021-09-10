@@ -26,7 +26,7 @@ resource "azurerm_storage_account_network_rules" "storage" {
   storage_account_name = azurerm_storage_account.storage.name
   resource_group_name  = var.resource_group_name
 
-  default_action             = "Deny"
+  default_action             = var.network_default_action
   virtual_network_subnet_ids = var.virtual_network_subnet_ids
   ip_rules                   = [for r in var.ip_rules : replace(r, "/32", "")]
   bypass                     = ["Logging", "Metrics", "AzureServices"]
