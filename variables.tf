@@ -39,6 +39,8 @@ variable "virtual_network_subnet_ids" {
 variable "ip_rules" {
   type        = list(string)
   description = "List of IP rules for accessing the Storage Account"
+
+  default = []
 }
 
 variable "containers" {
