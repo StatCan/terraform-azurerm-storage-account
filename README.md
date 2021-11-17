@@ -44,4 +44,6 @@ No Modules.
 
 | Date     | Release | Change                 |
 | -------- | ------- | ---------------------- |
-| 20211117 | v1.0.0  | Initial v0.0.1 release |
+| 20211117 | v1.1.1  | Make IP rules optional |
+| 20211117 | v1.1.0  | Initial v1.1.0 release |
+| 20211117 | v1.0.0  | Initial v1.0.0 release |
