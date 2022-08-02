@@ -47,3 +47,9 @@ variable "containers" {
   type        = list(string)
   description = "List of containers to create"
 }
+
+variable "hns_enabled" {
+  type        = bool
+  description = "Enable hierarchical namespace (creates Data Lake storage account)"
+  default     = false
+}
