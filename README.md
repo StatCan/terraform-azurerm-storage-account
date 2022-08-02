@@ -29,6 +29,7 @@ No Modules.
 | virtual_network_subnet_ids | list(string) | no       | "List of subnets to permit access to the Storage Accoun              |
 | ip_rules                   | list(string) | no       | List of IP rules for accessing the Storage Account                   |
 | containers                 | list(string) | yes      | List of containers to create                                         |
+| hns_enabled                | bool         | no       | Enable hierarchical namespace (creates Data Lake storage account)    |
 
 # Outputs
 
@@ -42,8 +43,10 @@ No Modules.
 
 ## History
 
-| Date     | Release | Change                 |
-| -------- | ------- | ---------------------- |
-| 20211117 | v1.1.1  | Make IP rules optional |
-| 20211117 | v1.1.0  | Initial v1.1.0 release |
-| 20211117 | v1.0.0  | Initial v1.0.0 release |
+| Date     | Release | Change                                                               |
+| -------- | ------- | -------------------------------------------------------------------- |
+| 20220802 | v1.2.0  | Add ability to define hierarchical namespaces for Data Lake Storage. |
+| 20211117 | v1.1.1  | Make IP rules optional                                               |
+| 20211117 | v1.1.0  | Initial v1.1.0 release                                               |
+| 20211117 | v1.0.0  | Initial v1.0.0 release                                               |
+
