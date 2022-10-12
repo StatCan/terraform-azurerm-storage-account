@@ -10,7 +10,7 @@ The following security controls can be met through configuration of this templat
 
 ## Dependencies
 
-- None
+- Terraform AzureRM Provider version >= 3.0.0 & < 4.0.0
 
 # Modules
 
@@ -45,6 +45,7 @@ No Modules.
 
 | Date     | Release | Change                                                               |
 | -------- | ------- | -------------------------------------------------------------------- |
+| 20221011 | v2.0.0  | Update AzureRM provider to v3.0.0                                    |
 | 20220802 | v1.2.0  | Add ability to define hierarchical namespaces for Data Lake Storage. |
 | 20211117 | v1.1.1  | Make IP rules optional                                               |
 | 20211117 | v1.1.0  | Initial v1.1.0 release                                               |
