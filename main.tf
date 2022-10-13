@@ -11,6 +11,14 @@ resource "azurerm_storage_account" "storage" {
   min_tls_version                 = "TLS1_2"
   is_hns_enabled                  = var.hns_enabled
 
+  dynamic "static_website" {
+    for_each = var.static_website.index_document == "" ? [] : [1]
+    content {
+      index_document     = var.static_website.index_document == "" ? null : var.static_website.index_document
+      error_404_document = var.static_website.error_404_document == "" ? null : var.static_website.error_404_document
+    }
+  }
+
   tags = var.tags
 
   lifecycle {
