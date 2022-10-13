@@ -45,6 +45,7 @@ No Modules.
 
 | Date     | Release | Change                                                               |
 | -------- | ------- | -------------------------------------------------------------------- |
+| 20221013 | v2.1.0  | Add ability to define storage account content                        |
 | 20221011 | v2.0.0  | Update AzureRM provider to v3.0.0                                    |
 | 20220802 | v1.2.0  | Add ability to define hierarchical namespaces for Data Lake Storage. |
 | 20211117 | v1.1.1  | Make IP rules optional                                               |

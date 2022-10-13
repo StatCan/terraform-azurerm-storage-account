@@ -53,3 +53,15 @@ variable "hns_enabled" {
   description = "Enable hierarchical namespace (creates Data Lake storage account)"
   default     = false
 }
+
+variable "static_website" {
+  description = "Serve static content (HTML, CSS, JavaScript, and image files) directly from a storage container."
+  default = {
+    index_document     = ""
+    error_404_document = ""
+  }
+  type = object({
+    index_document     = string
+    error_404_document = string
+  })
+}
