@@ -46,6 +46,8 @@ variable "ip_rules" {
 variable "containers" {
   type        = list(string)
   description = "List of containers to create"
+
+  default = []
 }
 
 variable "hns_enabled" {
