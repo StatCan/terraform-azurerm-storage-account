@@ -28,7 +28,7 @@ No Modules.
 | network_default_action     | string       | no       | Default network action to take                                       |
 | virtual_network_subnet_ids | list(string) | no       | "List of subnets to permit access to the Storage Accoun              |
 | ip_rules                   | list(string) | no       | List of IP rules for accessing the Storage Account                   |
-| containers                 | list(string) | yes      | List of containers to create                                         |
+| containers                 | list(string) | no       | List of containers to create                                         |
 | hns_enabled                | bool         | no       | Enable hierarchical namespace (creates Data Lake storage account)    |
 
 # Outputs
@@ -45,6 +45,7 @@ No Modules.
 
 | Date     | Release | Change                                                               |
 | -------- | ------- | -------------------------------------------------------------------- |
+| 20221013 | v2.2.0  | Set containers variable as optional                                  |
 | 20221013 | v2.1.0  | Add ability to define storage account content                        |
 | 20221011 | v2.0.0  | Update AzureRM provider to v3.0.0                                    |
 | 20220802 | v1.2.0  | Add ability to define hierarchical namespaces for Data Lake Storage. |
