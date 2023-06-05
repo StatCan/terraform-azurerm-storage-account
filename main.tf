@@ -26,11 +26,6 @@ resource "azurerm_storage_account" "storage" {
   }
 }
 
-resource "azurerm_advanced_threat_protection" "storage" {
-  target_resource_id = azurerm_storage_account.storage.id
-  enabled            = true
-}
-
 resource "azurerm_storage_account_network_rules" "storage" {
   storage_account_id = azurerm_storage_account.storage.id
 
