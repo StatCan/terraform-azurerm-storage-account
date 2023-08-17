@@ -19,11 +19,8 @@ resource "azurerm_storage_account" "storage" {
     }
   }
 
-  tags = var.tags
+  tags = local.tags
 
-  lifecycle {
-    ignore_changes = [tags.DateCreatedModified]
-  }
 }
 
 resource "azurerm_storage_account_network_rules" "storage" {

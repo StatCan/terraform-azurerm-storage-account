@@ -45,6 +45,7 @@ No Modules.
 
 | Date     | Release | Change                                                               |
 | -------- | ------- | -------------------------------------------------------------------- |
+| 20230816 | v2.4.0  | Implement tagging strategy for Azure resources                       |
 | 20230605 | v2.3.0  | Remove advanced threat protection.                                   |
 | 20221013 | v2.2.0  | Set containers variable as optional                                  |
 | 20221013 | v2.1.0  | Add ability to define storage account content                        |
